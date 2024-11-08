@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import Topic from "./components/Topic.jsx";
+import './index.css'
 
 import Questoin from "./components/Questoin.jsx";
 

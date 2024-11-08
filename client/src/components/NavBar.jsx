@@ -1,10 +1,15 @@
 
+  const brandStyle = {
+    fontSize: '54px',
+    color: '#BC8F8F',
+    fontFamily: 'Roboto',
+  };
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar" >
   <div className="container-md">
-    <a className="navbar-brand" href="/">Quizzz</a>
+    <a className="navbar-brand" href="/" style={brandStyle}>Quizzz 👻</a>
   </div>
 </nav>
     );

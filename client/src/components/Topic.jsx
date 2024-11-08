@@ -19,7 +19,7 @@ function Topic() {
   }
 
   const onHandleGetTopic = (id) => {
-    navigate(`/question/${id}`);
+    navigate(`/topic/${id}`);
   };
 
   return (

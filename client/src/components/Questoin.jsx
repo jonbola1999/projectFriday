@@ -9,6 +9,12 @@ function Questoin() {
   const { themeId } = useParams();
   console.log(themeId);
 
+  const questionStyle = {
+    fontSize: '20px',
+    fontFamily: 'Roboto',
+    backgroundColor: "#BC8F8F",
+  };
+
   useEffect(() => {
     loadQuestions();
   }, []);
@@ -22,11 +28,11 @@ function Questoin() {
   return (
     <>
       <div className="card text-center">
-        <div className="card-header">Quizzz</div>
+        <div className="card-header">🧠</div>
         <div className="card-body">
           <h5 className="card-title mb-3">Вопрос НЕКИЙ</h5>
 
-          <a href="#" className="btn btn-primary">
+          <a href="#" className="btn btn-primary" style={questionStyle}>
             Следущий вопрос
           </a>
         </div>

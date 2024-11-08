@@ -46,7 +46,7 @@ function Questoin() {
               answer1={current.answer1}
               answer2={current.answer2}
               answer3={current.answer3}
-              answer4={current.answer3}
+              answer4={current.answer4}
             />
           ))
         ) : (

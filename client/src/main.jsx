@@ -1,9 +1,27 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import Topic from "./components/Topic.jsx";
 
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import Questoin from "./components/Questoin.jsx";
 
-createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Topic />,
+      },
+      {
+        path: "/question/:themeId",
+        element: <Questoin />,
+      },
+    ],
+  },
+]);
 
-    <App />
-
-)
+createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);

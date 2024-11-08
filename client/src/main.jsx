@@ -5,6 +5,7 @@ import Topic from "./components/Topic.jsx";
 import './index.css'
 
 import Questoin from "./components/Questoin.jsx";
+import Ans from "./components/Ans.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/topic/:themeId",
         element: <Questoin />,
+      },
+      {
+        path: "/question/:id",
+        element: <Ans />,
       },
     ],
   },

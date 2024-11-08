@@ -15,7 +15,6 @@ function Topic() {
     const response = await fetch("/api/topics"); //  клиентская часть, которая обращается к серверу и обновляет ее
     const data = await response.json();
     setTopics(data);
-    console.log(1111111111, data);
   }
 
   const onHandleGetTopic = (id) => {

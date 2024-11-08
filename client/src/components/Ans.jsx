@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-function Ans(props) {
+function Ans({ answer1, answer2, answer3, answer4 }) {
   return (
-    <div className="card border-secondary mb-3" style="max-width: 18rem;">
-      <div className="card-header">Header</div>
-      <div className="card-body text-secondary">
-        <h5 className="card-title">Secondary card title</h5>
-        <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-      </div>
+    <div className="card border-secondary mb-3">
+      <button type="button" className="btn btn-warning mb-1 mt-1">
+        {answer1}
+      </button>
+      <button type="button" className="btn btn-warning mb-1">
+        {answer2}
+      </button>
+      <button type="button" className="btn btn-warning mb-1">
+        {answer3}
+      </button>
+      <button type="button" className="btn btn-warning mb-1">
+        {answer4}
+      </button>
     </div>
   );
 }

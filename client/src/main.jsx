@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <Topic />,
       },
       {
-        path: "/question/:themeId",
+        path: "/topic/:themeId",
         element: <Questoin />,
       },
     ],

@@ -5,13 +5,13 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert("Topics", [
       {
-        title: "История",
+        title: "Кругозор",
       },
       {
-        title: "География",
+        title: "Утренний стендап с Юрой",
       },
       {
-        title: "Химия",
+        title: "Эльбрус",
       },
     ]);
   },

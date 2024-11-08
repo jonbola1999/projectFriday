@@ -4,7 +4,7 @@ const {Question} = require('../db/models')
 
 router.route('/:id').get(async (req,res)=>{
   const {id} = req.params
-  console.log(id);
+  // console.log(id);
   
   // console.log(id);
   

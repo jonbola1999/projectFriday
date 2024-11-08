@@ -1,15 +1,10 @@
 import { useState } from "react";
 
 function Answer({ testProps }) {
-   // const [answers, setAnswers] = useState([{testProps.answer1},{testProps.answer2},{testProps.answer3},{ testProps.answer4}])
+  //  const [answers, setAnswers] = useState([{testProps.answer1},{testProps.answer2},{testProps.answer3},{ testProps.answer4}])
   return (
     <></>
-   // {answers.map((cur))}
-
-
-
-
-
+    // {answers.map((cur))}
 
     // <div className="card text-bg-secondary mb-3" style="max-width: 18rem;">
     //   <div className="card-header">Вопрос номер {id} </div>

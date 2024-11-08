@@ -11,15 +11,14 @@ function Topic() {
   }, [status]);
 
   async function loadTopics() {
-    console.log("Fetch API");
-
     const response = await fetch("/api/topics"); // это клиентская часть котороая обращается к серверу и обновляет ее
     const data = await response.json();
     setTopics(data);
+    console.log(1111111111, data);
   }
 
   const onHandleGetTopic = (id) => {
-    navigate(`/question/${id}`);
+    navigate(`/topic/${id}`);
   };
 
   return (
@@ -34,31 +33,10 @@ function Topic() {
               type="button"
               onClick={() => onHandleGetTopic(topic.id)}
             >
-              Тема 1
+              Тема - {topic.title}
             </button>
           );
         })}
-        <button
-          className="btn btn-primary"
-          type="button"
-          onClick={() => onHandleGetTopic(1)}
-        >
-          Тема 1
-        </button>
-        <button
-          className="btn btn-primary"
-          type="button"
-          onClick={() => onHandleGetTopic(2)}
-        >
-          Тема 2
-        </button>
-        <button
-          className="btn btn-primary"
-          type="button"
-          onClick={() => onHandleGetTopic(3)}
-        >
-          Тема 3
-        </button>
       </div>
     </div>
   );
